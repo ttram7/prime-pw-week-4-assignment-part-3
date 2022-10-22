@@ -57,3 +57,7 @@ function isFull() {
 console.log('Is basket full:',isFull());
 console.log('Adding smoothie - should say true:', addItem('smoothie'));
 console.log('Is basket full:',isFull());
+
+function removeItem(item) {
+    
+}
