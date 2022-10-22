@@ -59,5 +59,16 @@ console.log('Adding smoothie - should say true:', addItem('smoothie'));
 console.log('Is basket full:',isFull());
 
 function removeItem(item) {
-    
+    if (basket.includes(item) === true) {
+        let index = basket.indexOf(item);
+        let deletedItem = basket.splice(index, 1);
+        return deletedItem;
+    } else {
+        return null;
+        //return `Item not in basket. Cannot be removed: ${item}`;
+    }
 }
+
+console.log(basket);
+console.log(removeItem('soup'));
+console.log(basket);
